@@ -1,0 +1,186 @@
+html{
+	box-sizing: border-box;
+	background: #EEEAE6 ;
+}
+,:after.*:before{
+box-sizing: inherit;
+margin: 0;
+padding: 0;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+.logo-contenedor{
+	margin: 0;
+	background-color:#130493  ;
+	width: auto;
+	height: auto;
+}
+
+.encabezado{
+background: white;
+}
+.logo{
+	margin: 0;
+	width: 50px;
+    border-radius: -100%;
+}
+.encabezado nav{
+	display: inline-flex;
+	justify-content: space-around;
+	padding: 0px;
+}
+.encabezado nav ul{
+	list-style: none;
+    display: flex;
+    justify-content: space-between;
+    transition: all .5s;
+}
+
+a{
+	text-decoration: none;
+	font-size: 21px;
+	color: white;
+	padding: 10px 25px;
+	display: block;
+	transition: .4s;
+}
+.navegacion a:hover{
+	background: #00ae92 ;
+	color: black ;
+}
+.encabezado nav ul li ul{
+display: flex;
+flex-direction: column;
+}
+.encabezado nav ul li ul{
+	position: absolute;
+	background: #221a68;
+}
+.encabezado nav ul li ul li{
+	width: 310px;
+	position: relative;
+}
+.encabezado nav ul li ul li ul{
+	top: 0;
+	left: 180px;
+    position: absolute;
+}
+.encabezado nav ul li ul{
+	display: none;
+}
+.encabezado nav ul li:hover > ul{
+	display: block;
+	position: absolute;
+}
+
+figure{
+	margin: 0;
+	display: inline-block;
+	position: relative;
+	left: 45px;
+}
+figcaption{
+position: absolute;
+left: 0px;
+bottom: -80px;
+padding: 3%;
+}
+.divisor{
+	background: #ff0041;
+}
+.padre {
+	display: table;
+	height: 50px;
+	margin: 1rem auto;
+	text-align: left;
+	width: 100px;
+}
+.padre p{
+
+	display: table-cell;
+	font-size: 1rem;
+	margin: 0;
+	padding: 0 1rem;
+	vertical-align: left;
+	}
+.pie{
+	background-color:#130493  ;
+	width: auto;
+	height: auto;
+	color: white;
+}
+.portada{
+	vertical-align: top;
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	width: 1349px;
+	height: 600px;
+}
+.titulo-historia{
+	margin: 0;
+	background-color:#00ae92  ;
+	width: auto;
+	height: auto;
+}
+.titulo-historia:hover{
+	background: #130493 ;
+	color: whitesmoke ;
+}
+.histo{
+  max-width: 1000px;
+  width: 100%;
+  padding: 45px 100px;
+  margin: 0 auto;
+  margin-top: 0px;
+  color: black;
+}
+.galeria {
+	margin: 10px 20px;
+	box-shadow: 0 4px 8px, skyblue, 0 6px 20px 0,rgba(0, 0, 0, 0.19);
+}
+.galeria img{
+	width: 19.5%;
+	height: auto;
+}
+
+td{
+	text-align: justify;
+}
+th{
+	text-align: center;
+}
+table{
+	margin: 30px;
+}
+
+<table  align="center" class="tad" >
+
+  <tr >
+    <td class="tr"><h4 align="center"> Misión</h4>
+<p class="pad">
+Formar profesionistas en el ámbito de la química a través de un modelo educativo basado en competencias y el uso de herramientas tecnológicas, orientadas a la innovación y la solución de problemas ambientales y de los procesos industriales, contribuyendo con responsabilidad social al desarrollo sostenible de la región, manteniendo una estrecha vinculación con los sectores industrial, social y gubernamental. </p>
+</td>
+
+      <td > 
+<h4 align="center">Visión al 2024</h4>
+<p class="pad">
+Ser una División Académica reconocida por su calidad en la formación de profesionistas y la transferencia de tecnología a través de prácticas profesionales de sus estudiantes y la participación de los docentes en organismos gubernamentales y empresas del sector productivo.
+</p>
+</td>
+      </tr>
+</table>
+.tad{
+  width: 100%;
+}.pad{
+  text-align:justify;
+  display: block;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.46429;
+    color: #607d8b0;
+    padding: 30px;
+}
