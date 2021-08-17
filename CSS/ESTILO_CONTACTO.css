@@ -1,0 +1,38 @@
+ body{
+ 	background-image: url('../FOTOS/FONDO3.jpg');
+}
+.contenedor-info{
+	width: auto;
+	height: 500px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+.Mapa{
+float: left;
+padding-left: 100px;
+padding-top: 30px;
+font-style: arial;
+}
+.servicio1{
+	padding-right: 200px;	
+	float: right;
+}
+.contacto{
+	float: left;
+	padding-left: 100px;
+}
+.video{
+	float: right;
+	padding-right: 200px;
+}
+.contenedor-info2{
+	width: auto;
+	height: 300px;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+.info-res{
+	color: white;
+	font-style: arial;
+
+}

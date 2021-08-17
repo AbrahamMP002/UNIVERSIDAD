@@ -1,0 +1,82 @@
+<?php 
+  include("conexion2.php");
+      if(isset($_GET['user'])){
+      $sett=$_GET['user'];
+  }
+     ?>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta  charset="utf-8">
+    <meta name="description" content="Nuestra franquicia consiste en que usted instale y opere su propio negocio restaurantero: una exitosa y muy rentable taquería ATAKEAR®, un lugar casual, limpio y agradable, donde sus clientes encontrarán los más exquisitos takos al pastor y nuestra especialidad; el tako de Sirloin, que se ha convertido en el sello de nuestra marca y uno de los favoritos de nuestros clientes.">
+    <meta name="keywords" content="El mejor restaurante para darse en familia un ataskon de sabor, Atakear!">
+    
+  <title>ATAKEAR</title>
+  <link rel="stylesheet" href="../CSS/ESTILOS_CSS.css">
+   <link rel="stylesheet" href="../CSS/LOGIN.css">
+
+   <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+      
+
+  </head>
+  <!-----------------------------------INICIO--DE--PAGINA--BARRA-NAV------------------------------->
+   <header class="encabezado">
+    <div class="logo-contenedor"> 
+      <nav class="navegacion">
+        <ul>
+          <li><a href="../ATAKEAR_INICIO.php?user= <?php echo $sett ?>" class="navbar-brand"><img src="../FOTOS/LOGO.png" alt="" width="70" height="40"></a></li>
+         <li><a href="../ATAKEAR_INICIO.php?user=<?php echo $sett ?>" >Inicio</a></li>
+          <li><a href="MENU.php?user=<?php echo $sett ?>">Menú</a></li>
+          <li><a href="HISTORIA.php?user=<?php echo $sett ?>">Quienes somos</a></li>
+           <li><a href="CONTACTO.php?user=<?php echo $sett ?>">Contáctanos</a></li>
+           <li><a href="LOGIN.php?user=<?php echo $sett ?>" class="navbar-brand"><i class="fas fa-user-circle"></i> Inicia Sesión</a></li>
+        <li><a href="CARRITO.php?user=<?php echo $sett ?>"><i class="fas fa-cart-arrow-down"></i></a></li>
+      </ul>
+      </nav>
+    </div>
+  </header>
+  <body background="../FOTOS/FONDO1.jpg">
+ <!-----------------------------------INICIO-BODY------------------------------>   
+    <br>
+       <center><img src="../FOTOS/LOGO2.png" width="400"></center>
+  <br>
+<form action="../funciones/registro_clientes.php" method="post">
+  <center><img src="../FOTOS/ICONO1.png" width="70px"></center>
+  <br>
+   <h1 class="animate__animated animate__backInLeft">Registrate</h1>
+   <br>
+   <p>Nombre<input type="text" placeholder="Ingrese su nombre completo" name="nombre"></p>
+   <p>Fecha de Nacimiento<input class="crotrols" type="date" name="fecha"></p>
+   <p>Dirección<input type="text" placeholder="Ingrese la direccion de su domicilio" name="direccion"></p>
+   <p>Estado<input type="text" placeholder="Ingrese su estado" name="estado"></p>
+   <p>Municipio<input type="text" placeholder="Ingrese su municipio" name="municipio"></p>
+   <p>Colonia<input type="text" placeholder="Ingrese su colonia" name="colonia"></p>
+   <p>Correo <input type="text" placeholder="Ingrese su correo" name="correo"></p>
+   <p>Contraseña<input type="password" placeholder="Ingrese su contraseña" name="contraseña"></p>
+ <input class="buttons" type="submit" value="Ingresar">
+   <br><br>
+ <p><a class="link" href="LOGIN.php?user=<?php echo $sett ?>">Ya tengo cuenta. &nbsp Iniciar Sesión.</a></p>
+   </form>
+
+  <!-----------------------------------INICIO--PIE--DE--PAGINA--------------------------->
+ <footer role="contetinfo">
+<div class="pie">
+  <nav>
+<table style="width: 100%;">
+  <tr>
+<td><p>Siguenos en:</p></td>
+  <td><a href="https://www.instagram.com/a.takear/"><img src="../FOTOS/INSTA.png" height="45" width="55"></a></td>
+  <td><a href="https://www.facebook.com/atakear"><img src="../FOTOS/FB.png" height="55" width="55"></a></td>
+        <td><p><b>Ordena tambien en: </b></p></td>
+        <td><a href="https://www.ubereats.com/mx/store/a-takear!-deportiva/qcI6hcXURLibo1Ka07DGMg"><img src="../FOTOS/UBER.png" height="65" width="100"></a></td>
+        <td><a href="https://www.rappi.com.mx/restaurantes/1923250569-atakear-villahermosa"><img src="../FOTOS/RAPPI.png" height="65" width="65"></a></td>
+        <td><a href="https://play.google.com/store/apps/details?id=com.xiaojukeji.didi.global.customer"><img src="../FOTOS/DIDI.png" height="65" width="80"></a></td>
+</table>
+</nav>
+</div>
+</footer>
+   
+</body>
+</html>    

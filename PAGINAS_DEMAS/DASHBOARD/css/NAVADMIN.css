@@ -1,0 +1,64 @@
+.logo-contenedor{
+	margin: 0;
+	background-color: #000000;
+	width: auto;
+	height: auto;
+}
+.encabezado{
+	background: white;
+}
+.logo{
+	margin: 0;
+	width: 100px;
+	border-radius: -100%;
+}
+.encabezado nav{
+	display: inline-flex;
+	justify-content: space-around;
+	padding: 0px;
+	align-content: all;
+}
+.encabezado nav ul{
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	transition: all .5s;
+	text-decoration: none;
+}
+a{
+	text-decoration: none;
+	font-size: 21px;
+	color: white;
+	display: block;
+	transition: .4s;
+}
+.navegacion a:hover{
+	background: #FF7800;
+	text-decoration: none;
+	color: white;
+}
+.encabezado nav ul li ul{
+	display: flex;
+	flex-direction: column;
+}
+.encabezado nav ul li ul{
+	position: absolute;
+	background: #000000;
+}
+.encabezado nav ul li ul li{
+	width: 310px;
+	position: relative;
+}
+.encabezado nav ul li ul li ul{
+	top: 0;
+	left: 180px;
+	position: absolute;
+}
+.encabezado nav ul li ul{
+	display: none;
+}
+.encabezado nav ul li:hover > ul{
+	display: block;
+	position: absolute;
+}
+

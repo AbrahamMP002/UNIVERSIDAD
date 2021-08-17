@@ -1,0 +1,29 @@
+.perfil-usuario-footer{
+	width: auto;
+	height: 200px;
+	background: white;
+	padding-top: 20px;
+	padding-left: 30px;
+	box-shadow: 7px 13px 37px #000;
+	opacity: .75;
+
+}
+.perfil-usuario{
+	width: auto;
+	height: 100px;
+	background: white;
+	box-shadow: 7px 13px 37px #000;
+	opacity: .75;
+
+}
+.lista-datos1{
+	list-style: none;
+	float: left;
+	padding-left: 300px;
+}
+.lista-datos2{
+	list-style: none;
+	float: right;
+	padding-right: 400px;
+
+}
